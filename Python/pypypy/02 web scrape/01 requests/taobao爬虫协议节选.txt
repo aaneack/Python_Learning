@@ -1,0 +1,26 @@
+一部分淘宝的robots协议 （ http://www.taobao.com/robots.txt）
+
+User-agent:  Baiduspider # 百度爬虫
+Allow:  /article # 允许访问 article 
+Allow:  /oshtml # 允许访问 oshtml 
+Allow:  /ershou # 允许访问 ershou 
+Allow: /$ # 允许访问根目录，即淘宝主页
+Disallow:  /product/ # 禁止访问product文件夹下面的所有文件，但是product文件夹本身允许被访问
+Disallow:  / # 禁止访问除 Allow 规定页面之外的其他所有页面
+​
+User-Agent:  Googlebot # 谷歌爬虫
+Allow:  /article
+Allow:  /oshtml
+Allow:  /product # 允许访问product文件夹及product文件夹下面的所有文件
+Allow:  /spu
+Allow:  /dianpu
+Allow:  /oversea
+Allow:  /list
+Allow:  /ershou
+Allow: /$
+Disallow:  / # 禁止访问除 Allow 规定页面之外的其他所有页面
+​
+…… # 文件太长，省略了对其它爬虫的规定，想看全文的话，点击上面的链接
+​
+User-Agent:  * # 其他爬虫
+Disallow:  / # 禁止访问所有页面
